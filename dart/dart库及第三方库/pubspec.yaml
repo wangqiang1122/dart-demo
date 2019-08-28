@@ -1,0 +1,6 @@
+name: xxxx
+description: 一个新的fluuter项目 使用的第三方的插件的要在这里引用
+# 使用的第三方的插件的要在这里引用
+dependencies:           
+  date_format: ^1.0.6
+  
