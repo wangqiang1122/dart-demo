@@ -20,3 +20,5 @@ class Person{
      show();    //静态方法
    } 
 }
+class a extends Person{
+}

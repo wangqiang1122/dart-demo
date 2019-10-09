@@ -18,6 +18,7 @@ class Web extends Person{
   // } // 
   Web(String name, num age, String sex) : super.XXX(name,age){
      this.sex = sex;
+     printInfo();
   }
   // 命名构造函数传参数
 

@@ -24,4 +24,5 @@ class Cat extends Animal {
 main() {
     Animal a = new Cat(); // 把子类的赋给赋给了父类的引用 就没有run方法了
     a.eat();
+    a.printInfo();
 }  

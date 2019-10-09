@@ -13,9 +13,10 @@ class Person {
   void printInfo() {
     print('${this.name}--${this.age}');
   }
+
 }
 class Web extends Person{
-
+   Web():super();
 }
 void main() {
  Web a = new Web();

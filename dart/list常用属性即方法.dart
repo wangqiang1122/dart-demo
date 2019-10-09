@@ -24,8 +24,9 @@ void main() {
   // obj.add('ddd');
   // obj.add('da');
   // print(obj.toList());
-   var list = ['西瓜','苹果','香蕉','苹果','香蕉'];
+   List list = ['西瓜','苹果','香蕉','苹果','香蕉'];
    print(list.toSet());
-
-
+  //  List <String>  list;
+  //  list = List()..add('dddd');
+  //   print(list);
 }
