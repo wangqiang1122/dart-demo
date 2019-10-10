@@ -11,6 +11,9 @@ abstract class Duck{
   preformfly() {
     flyBehavior.fly();
   }
+  setpreformfly( FlyBehavior flyBehavior) {
+    this.flyBehavior = flyBehavior;
+  }
 }
 
 // 鸭子飞行的行为接口
@@ -34,6 +37,13 @@ class Fei extends FlyBehavior{
     print('飞');
   }
 }
+// 不会飞
+class Fei1 implements FlyBehavior {
+  @override
+  fly() {
+    print('太胖了飞不动');
+  }
+}
 
 class FlyWithWings extends Duck{
   FlyWithWings():super(new Fei(),new Quack());
@@ -43,4 +53,6 @@ main(){
 FlyWithWings d = new FlyWithWings();
 d.preformfly();
 d.preformquack();
+d.setpreformfly(new Fei1());
+d.preformfly();
 }
