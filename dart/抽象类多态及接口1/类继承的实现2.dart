@@ -1,5 +1,5 @@
 // 鸭子的超类
-
+// 我们是用的策略模式来实现鸭子的各种行为的
 abstract class Duck{
   // 有鸭子不会变化的公共部分
   FlyBehavior flyBehavior;
