@@ -19,9 +19,13 @@ class Pizza{
     print('box');
   }
 }
+/***
+ *  这种方式可以让每个店面更加自由的出产自己的产品及贩卖方式(类及类的方法)可以自己定义
+ *  方法及产品比较灵活
+ *  
+ * */
 
 // 店1的特色产品及方法
-
 class LaweiPizza extends Pizza {
    @override 
    prepare(){
