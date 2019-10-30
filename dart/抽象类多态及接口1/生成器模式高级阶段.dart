@@ -57,7 +57,8 @@ abstract class PizzaStore{ // 这个只是一个总的方法 需要给其他的�
   createPizza(String type);
 }
 
-// 店一的比萨店
+// 店一的比萨店 每个店可以有特色的产品 
+// createPizza是个每个店可以定制化制造自己的披萨
 class Dian1 extends PizzaStore {
   @override
   createPizza(String type) {

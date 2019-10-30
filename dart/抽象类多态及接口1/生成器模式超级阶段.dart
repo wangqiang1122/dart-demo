@@ -6,7 +6,7 @@
  */
 
 // 需要建立一个原料厂(也就是总接口) 其他的一些类比较继承自他
-
+// 每个店的原料定制化 设置
  abstract class PizzaIngredientFoctory{
    createDough();
    createSauce();
@@ -19,18 +19,42 @@
 // 需要自己写里面的实现方法
 class NYPizzaIngredientFoctory extends PizzaIngredientFoctory {
    @override
-   createDough(){}
+   createDough(){
+     print('NYcreateDough');
+   }
     @override
-   createSauce(){}
+   createSauce(){
+      print('NYSauce');
+   }
     @override
-   createCheese(){}
+   createCheese(){
+     print('NYCheese');
+   }
     @override
-   createPepperoni(){}
+   createPepperoni(){
+     print('NYPepperoni');
+   }
     @override
-   createClam(){}
+   createClam(){
+     print('NYClam');
+   }
    @override
    createVeggies(){
      return [];
    }
 }
 // 需要重新写披萨放方法
+class Pizza{
+  
+}
+
+
+abstract class PizzaStore{ // 这个只是一个总的方法 需要给其他的类去用
+  orderPizza(String type) {
+    var pizza;
+    pizza = createPizza(type);
+    pizza.prepare();
+    return pizza;
+  }
+  createPizza(String type);
+}
