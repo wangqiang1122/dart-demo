@@ -1,7 +1,7 @@
 abstract class Anmail{
   makeSound();
 }
-
+// implements接口现实
 class Dog implements Anmail {
    bark(){
     print('狗叫了');
